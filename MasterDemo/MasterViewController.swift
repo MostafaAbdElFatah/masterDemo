@@ -45,7 +45,7 @@ class MasterViewController: UITableViewController {
 
     // MARK: - Segues
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let object = objects[indexPath.row] as! NSDate
